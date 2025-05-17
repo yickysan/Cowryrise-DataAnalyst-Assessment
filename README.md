@@ -48,7 +48,7 @@ The goal here is to identify customer lifetime value of each customer. To do thi
 
 * The profits CTE is used to calculate the CLV with the fomular prescribed on the assessment. The customer table and the profits CTE were joined using an inner join.
 
-* Python was used the visualise the 10 most valuable cstomers
+* Python was used the visualise the 10 most valuable customers
 <img src="plots/assessment_q4.png">
 
 
