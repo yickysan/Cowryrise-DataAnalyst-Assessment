@@ -11,10 +11,10 @@ SELECT owner_id, COUNT(savings_id) total_transactions,
  GROUP BY owner_id
 )
 SELECT u.id customer_id, CONCAT(u.first_name, ' ',  u.last_name) "name",
-       floor(DATEDIFF(CURDATE(), u.date_joined) / 30) tenure_months,
+       FLOOR(DATEDIFF(CURDATE(), u.date_joined) / 30) tenure_months,
        pr.total_transactions,
        ROUND((pr.total_transactions /
-              floor(DATEDIFF(CURDATE(), u.date_joined) / 30)
+              FLOOR(DATEDIFF(CURDATE(), u.date_joined) / 30)
               ) * 12 * pr.profit,
              2
             )  estimated_clv
