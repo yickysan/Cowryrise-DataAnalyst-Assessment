@@ -40,7 +40,7 @@ Here is a breakdown of how I identified the inactive accounts.
 
 #### Q4 - Customer Lifetime Value (CLV) Estimation
 
-The goal here is the ide customer lifetime value of each customer. To do this, here are the steps I followed:
+The goal here is to identify customer lifetime value of each customer. To do this, here are the steps I followed:
 
 * I computed the profits that the company made from each customer in naira and stored the result in a CTE called profits.
 
